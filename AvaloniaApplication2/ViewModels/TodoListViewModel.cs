@@ -10,10 +10,11 @@ namespace AvaloniaApplication2.ViewModels
 {
     public class TodoListViewModel : ViewModelBase
     {
-        public TodoListViewModel(IEnumerable<TodoItem> items)
+        public TodoListViewModel()
         {
-            Items = new ObservableCollection<TodoItem>(items);
+            Items = Models.db.todoContext.Todos.ToList();
         }
-        public ObservableCollection<TodoItem> Items { get; }
+        public List<Todo> Items { get; }
+
     }
 }

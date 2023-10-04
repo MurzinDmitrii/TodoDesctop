@@ -9,6 +9,6 @@
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="AvaloniaApplication2"
-	    Content="{Binding List}">
+	    Content="{Binding Content}">
 
 </Window>
