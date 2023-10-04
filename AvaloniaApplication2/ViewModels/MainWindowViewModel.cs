@@ -44,5 +44,9 @@ namespace AvaloniaApplication2.ViewModels
 
             Content = vm;
         }
+        public void Checked()
+        {
+            db.todoContext.SaveChanges();
+        }
     }
 }

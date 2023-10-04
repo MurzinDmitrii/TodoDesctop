@@ -16,6 +16,7 @@
 				<DataTemplate>
 					<CheckBox Margin="4"
 							  IsChecked="{Binding Check}"
+							  Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).Checked}"
 							  Content="{Binding Description}"/>
 				</DataTemplate>
 			</ItemsControl.ItemTemplate>
