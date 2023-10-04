@@ -15,5 +15,6 @@ namespace AvaloniaApplication2.ViewModels
             Items = Models.db.todoContext.Todos.ToList();
         }
         public List<Todo> Items { get; }
+
     }
 }

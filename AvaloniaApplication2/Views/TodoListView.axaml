@@ -8,8 +8,8 @@
              x:Class="AvaloniaApplication2.Views.TodoListView">
 	<DockPanel>
 		<Button DockPanel.Dock="Bottom"
-				HorizontalAlignment="Center">
-			Add an item
+            Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).AddItem}">
+			Добавить элемент
 		</Button>
 		<ItemsControl ItemsSource="{Binding Items}">
 			<ItemsControl.ItemTemplate>
