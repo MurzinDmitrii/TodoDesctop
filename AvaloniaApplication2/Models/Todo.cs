@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AvaloniaApplication2.Models;
 
-public partial class Todo
+public class Todo
 {
     public string Description { get; set; } = null!;
 
