@@ -8,8 +8,8 @@
 			 x:DataType="vm:AddItemViewModel"
 			 >
 	<DockPanel>
-		<Button DockPanel.Dock="Bottom">Cancel</Button>
-		<Button DockPanel.Dock="Bottom">OK</Button>
+		<Button DockPanel.Dock="Bottom" Command="{Binding Cancel}">Cancel</Button>
+		<Button DockPanel.Dock="Bottom" Command="{Binding Ok}">OK</Button>
 		<TextBox AcceptsReturn="True"
 				 Text="{Binding Description}"
 				 Watermark="Введите заметку"/>
